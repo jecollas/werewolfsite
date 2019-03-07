@@ -1,172 +1,68 @@
 <!DOCTYPE html>
 <lang="en-us" dir="ltr">
 <head>
-  <title>Werewolves and Lycanthropes</title>
+  <title>Werewolf</title>
   <meta charset="utf-8">
-    <script src="js/html5shiv-printshiv.min.js"></script>
-    <meta name="title" content="Werewolves and Lycanthropes">
+  <meta name="title" content="Werewolf">
+  <script src="js/html5shiv-printshiv.min.js"></script>
+  <link href="css/werewolf.css" rel="stylesheet" text="text/css">
 </head>
 
 <body>
-    <header>
+
+<header>
+
+  <div class="overup">
+    <a href="index.html">
       <h1>Werewolf</h1>
-    </header>
+    </a>
+  </div>
 
-<!-- This is all Table of Contents html I got from the wikipedia page. None of this is mine. Once I figure out how to actually do this in the style that I want, I will change it.
--->
-
-    <div class="toc" id="toc">
-      <input tpe="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none">
-
-      <div class="toctitle" lang="en-us" dir="ltr">
-        <h2>Contents</h2>
-      </div>
-
+  <nav>
+    <div class="navbar">
       <ul>
-        <li class="toclevel-1 tocsection-1">
-          <a href="#Names">
-            <span class="tocnumber">1</span>
-            <span class="toctext">Names</span>
-          </a>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdownbutton">History</a>
+          <div class="navlinks">
+          <a href="names.html">Names</a>
+          <a href="lycanthropyasamedicalcondition.html">Lycanthropy as a Medical Condition</a>
+          <a href="indoeuropeancomparativemythology.html">Indo-European Comparative Mythology</a>
+          <a href="classicalantiquity.html">Classical Antiquity</a>
+          <a href="middleages.html">Middle Ages</a>
+          <a href="earlymodernhistory.html">Early Modern History</a>
+          </div>
         </li>
-        <li class="toclevel-1 seocsection-2">
-          <a href="#History">
-            <span class="tocnumber">2</span>
-            <span class="toctext">History</span>
-          </a>
-          <ul>
-            <li class="toclevel-2 tocsection-3">
-              <a href="#Indo-European_comparative_mythology">
-                <span class="tocnumber">2.1</span>
-                <span class="toctext">Indo-European comparative mythology</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-4">
-              <a href="#Classical_antiquity">
-                <span class="tocnumber">2.2</span>
-                <span class="toctext">Classical antiquity</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-5">
-              <a href="#Middle_Ages">
-                <span class="tocnumber">2.3</span>
-                <span class="toctext">Middle Ages</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-6">
-              <a href="#Early_modern_history">
-                <span class="tocnumber">2.4</span>
-                <span class="toctext">Early modern history</span>
-              </a>
-            </li>
-<!--
-
-there is so much of this holy shit. why do i even need span classes for this shit. i have no idea. ask dad what this all means
-
-<a href="page2.html">
-page2.html is the target page in a folder within the project folder.
-
-<a href="#page2">
-is a reference to part of the same page
-
-<span> is section within a piece of text, can encompass something a little more complex
-
--->
-            <li class="toclevel-2 tocsection-7">
-              <a href="#Asian_cultures">
-                <span class="tocnumber">2.5</span>
-                <span class="toctext">Asian cultures</span>
-              </a>
-            </li>
-          </ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdownbutton">Folk Beliefs</a>
+            <div class="navlinks">
+              <a href="characteristics.html">Characteristics</a>
+              <a href="becomingawerewolf.html">Becoming a Werewolf</a>
+              <a href="remedies.html">Remedies</a>
+              <a href="connectiontorevenants.html">Connection to Revenants</a>
+              <a href="hungaryandbalkans.html">Hungary and Balkans</a>
+              <a href="caucasus.html">Caucasus</a>
+              <a href="americasandcaribbean.html">Americas and Caribbean</a>
+            </div>
         </li>
-        <li class="toclevel-1 tocsection-8">
-          <a href="#Lycanthropy_as_a_medical_condition">
-            <span class="tocnumber">3</span>
-            <span class="toctext">Lycanthropy as a medical condition</span>
-          </a>
-        </li>
-        <li class="toclevel-1 tocsection-9">
-          <a href="Folk_beliefs">
-            <span class="tocnumber">4</span>
-            <span class="toctext">Folk beliefs</span>
-          </a>
-          <ul>
-            <li class="toclevel-2 tocsection-10">
-              <a href="#Characteristics">
-                <span class="tocnumber">4.1</span>
-                <span class="toctext">Characteristics</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-11">
-              <a href="#Becoming_a_werewolf">
-                <span class="tocnumber">4.2</span>
-                <span class="toctext">Becoming a werewolf</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-12">
-              <a href="#Remedies">
-                <span class="tocnumber">4.3</span>
-                <span class="toctext">Remedies</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-13">
-              <a href="#Connection_to_revenants">
-                <span class="tocnumber">4.4</span>
-                <span class="toctext">Connection to revenants</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-14">
-              <a href="#Hungary_and_Balkans">
-                <span class="tocnumber">4.5</span>
-                <span class="toctext">Hungary and Balkans</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-15">
-              <a href="#Caucasus">
-                <span class="tocnumber">4.6</span>
-                <span class="tocsection">Caucasus</span>
-              </a>
-            </li>
-            <li class="toclever-2 tocsection-16">
-              <a href="Americas_and_Caribbean">
-                <span class="tocnumber">4.7</span>
-                <span class="toctext">Americas and Caribbean</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="toclevel-1 tocsection-17">
-          <a href="#Modern_reception">
-            <span class="tocnumber">5</span>
-            <span class="toctext">Modern reception</span>
-          </a>
-          <ul>
-            <li class="toclevel-2 tocsection-18">
-              <a href="#Werewolf_fiction">
-                <span class="tocnumber">5.1</span>
-                <span class="toctext">Werewolf fiction</span>
-              </a>
-            </li>
-            <li class="toclevel-2 tocsection-19">
-              <a href="#Nazi_Germany">
-                <span class="tocnumber">5.2</span>
-                <span class="toctext">Nazi Germany</span>
-              </a>
-            </li>
-          </ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdownbutton">Modern Reception</a>
+            <div class="navlinks">
+              <a href="werewolffiction.html">Werewolf Fiction</a>
+              <a href="nazigermany.html">Nazi Germany</a>
+            </div>
         </li>
       </ul>
     </div>
+  </nav>
 
 
+    <div class="title">
+      <h2>Werewolf</h2>
+    </div>
 
+  </header>
 
-
-<!-- This is the end of the Wikipedia html I have stolen
--->
-
-    <section class="main_page">
+  <section class="pagesetup">
       <p>
         In folklore, a werewolf (Old English: <i>werwulf</i>, "man-wolf") or occasionally lycanthrope /ˈlaɪkənˌθroʊp/ (Greek: λυκάνθρωπος  <i>lukánthrōpos</i>, "wolf-person") is a human with the ability to shapeshift into a wolf (or, especially in modern film, a therianthropic hybrid wolf-like creature), either purposely or after being placed under a curse or affliction (often a bite or scratch from another werewolf) and especially on the night of a full moon. Early sources for belief in this ability or affliction, called lycanthropy /laɪˈkænθrəpi/, are Petronius (27–66) and Gervase of Tilbury (1150–1228).
       </p>
