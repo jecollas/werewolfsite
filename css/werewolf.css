@@ -17,7 +17,8 @@ a {
   font-family: "Trebuchet MS", Verdana, sans-serif;
 }
 
-a:hover {
+a:hover
+a:focus {
   color: #CB9622;
 }
 
@@ -50,7 +51,8 @@ a:hover {
   text-decoration: none;
 }
 
-.dropdown:hover .navlinks {
+.dropdown:hover
+.navlinks {
   display: block;
 }
 
@@ -75,4 +77,15 @@ a:hover {
 
 li.a:hover {
   color: #CB9622;
+}
+
+@media (min-width: 60em) {
+
+  nav a{
+    display: inline-block;
+  }
+
+  nav li{
+    display: inline-block;
+  }
 }
