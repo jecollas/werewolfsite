@@ -187,7 +187,7 @@ li.a:hover {
     display: inline-block;
   }
 
-  img {
+  figure {
     object-fit: contain;
   }
 }
