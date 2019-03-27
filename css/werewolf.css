@@ -90,6 +90,16 @@ small {
   padding: 0em;
 }
 
+.bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  min-width: 63px;
+  max-width: 63px;
+}
+
 .lycaon-img {
   float: left;
   padding: 2em;
