@@ -179,11 +179,15 @@ li.a:hover {
 
 @media (min-width: 60em) {
 
-  nav a{
+  nav a {
     display: inline-block;
   }
 
-  nav li{
+  nav li {
     display: inline-block;
+  }
+
+  img {
+    object-fit: contain;
   }
 }
