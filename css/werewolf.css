@@ -7,6 +7,10 @@
   font-family: "Times New Roman";
   }
 
+.overup a:hover {
+  color: #CB9622;
+}
+
 body {
   color: #F1F1F2;
   background-color: #202225;
@@ -173,7 +177,7 @@ a:focus {
   color: #CB9622;
 }
 
-li.a:hover {
+li a:hover {
   color: #CB9622;
 }
 
